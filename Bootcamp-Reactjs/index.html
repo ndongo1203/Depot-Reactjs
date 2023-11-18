@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+
+    <!-- //********* javascrit *********// -->
+    <!-- const root = document.getElementById('root');
+    let h1 = document.createElement('h1');
+    h1.innerText = "Coucou les amis"
+
+    root.appendChild(h1); 
+
+    let h1 = document.createElement('h1', null, "Coucou les amis");
+        ReactDOM.render(h1, root);
+-->
+
+
+    <script type="text/babel">
+
+        const root = document.getElementById('root');
+        const title = "Coucou les amis!"
+
+        function MyCompo () {
+            return (
+                <section>
+                    <h1>Coucou les amis!</h1>    
+                </section> 
+            )
+        }
+
+        const template = (
+            <main>
+                <MyCompo />
+            </main>
+        );
+            
+        
+        ReactDOM.render(template, root)
+
+    </script>
+
+    
+</body>
+</html>
